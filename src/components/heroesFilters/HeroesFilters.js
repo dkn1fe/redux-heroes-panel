@@ -14,7 +14,7 @@ import classNames from "classnames";
 // Представьте, что вы попросили бэкенд-разработчика об этом
 
 const HeroesFilters = () => {
-    const {filters,filterLoadingStatus,activeFilter} = useSelector(state =>  state)
+    const {filters,filterLoadingStatus,activeFilter} = useSelector(state =>  state.filter)
     const {request} = useHttp();
     const dispatch = useDispatch();
 
